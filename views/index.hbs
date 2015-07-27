@@ -1,0 +1,106 @@
+<!-- Modal -->
+<div class="modal fade" id="loginModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel">用户信息</h4>
+            </div>
+            <div class="modal-body">
+                <div cldiv="form-group">
+                    <label class="control-label" for="J_login_email">邮箱</label>
+                    <input type="email" class="form-control" id="J_login_email" placeholder="exemple@husor.com.cn">
+                </div>
+
+                <div cldiv="form-group">
+                    <label class="control-label" for="J_name_name">名字</label>
+                    <input type="email" class="form-control" id="J_login_name" placeholder="张三">
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label" for="J_login_to">发送跟</label>
+                    <input type="email" class="form-control" placeholder="exemple@husor.com.cn;exemple@husor.com.cn"
+                           id="J_login_to">
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" id="J_login">保存用户信息</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="clearfix hide" id="J_email_con">
+    <div class="row title">
+        <span class="col-lg-5">周报系统</span>
+        <span class="col-lg-6 text-right name-con" id="J_show_email">
+
+        </span>
+        <span class="col-lg-1 text-right">
+            <button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target="#loginModal">
+                修改
+            </button>
+        </span>
+    </div>
+
+    <div class="clearfix time form-inline">
+        <div class="form-group">
+            <label for="J_startTime">本周开始:</label>
+            <input type="text" type="text" id="J_startTime" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="J_endTime">本周结束:</label>
+            <input type="text" type="text" id="J_endTime" class="form-control">
+        </div>
+
+    </div>
+
+    <div class="clearfix">
+        <div class="col-lg-6">
+            <label class="control-label" for="J_context">MD</label> |
+            <a href="https://help.github.com/articles/writing-on-github/" target="_blank">MD语法</a> |
+            <a href="#" class="J_tml" data-tpl="tpl1">两列表格</a> |
+            <a href="#" class="J_tml" data-tpl="tpl2">三列表格</a> |
+            <a href="#" class="J_tml" data-tpl="tpl3">四列表格</a> |
+            <a href="#" class="J_tml" data-tpl="tpl4">列表</a>
+            <textarea rows="30" id="J_context" class="form-control"></textarea>
+        </div>
+        <div class="col-lg-6">
+            <label class="control-label">预览</label>
+
+            <div class="markPreview" id="J_markHtml">
+                <div class="markdown-body" id="J_htmlInner">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="clearfix margin-t-20">
+            <button class="center-block btn btn-primary btn-lg" id="J_subBt">发送</button>
+    </div>
+
+</div>
+
+<div class="modal fade" id="J_success">
+    <div class="modal-dialog">
+        <div class="alert alert-success fade in text-center" role="alert">
+            <strong>发送成功</strong>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="J_error">
+    <div class="modal-dialog">
+        <div class="alert alert-warning fade in text-center" role="alert">
+            <strong>发送失败</strong>
+        </div>
+    </div>
+</div>
+
+<script src="/javascripts/src/init.js"></script>
+<script src="/javascripts/src/sendEmail.js"></script>
+<script src="/javascripts/src/login.js"></script>
+<script src="/javascripts/src/markdownRender.js"></script>
+

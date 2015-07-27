@@ -1,0 +1,31 @@
+html,body,.container{
+  min-height: 100%;
+}
+.container{
+    box-shadow: 0 5px 15px rgba(200, 200, 200, .5);
+    padding-bottom: 20px;
+}
+.title{
+  height: 50px;
+  line-height: 50px;
+  background: #337ab7;
+  color: #fff;
+  margin: 0 0 15px 0;
+  font-size: 20px;
+  margin: 0 -15px 15px -15px;
+  font-family: '微软雅黑';
+}
+.name-con{
+  font-size: 14px;
+}
+.margin-t-20{
+  margin-top: 20px;
+}
+.markPreview{
+  padding: 0 8px;
+  border: 1px #ddd solid;
+  min-height: 615px;
+}
+.time{
+  margin-bottom: 15px;
+}
