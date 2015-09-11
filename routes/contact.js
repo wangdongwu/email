@@ -16,12 +16,12 @@ router.post('/', function (req, res, next) {
     var transporter = nodemailer.createTransport({
         service: 'QQex',
         auth: {
-            user: 'testreport@husor.com.cn',
-            pass: 'Huxiu0829'
+            user: '',
+            pass: ''
         }
     });
 
-    
+
 
 
     var context = '<div class="markdown-body">'+marked(req.body.context)+'</div>';
