@@ -28,7 +28,7 @@ router.post('/', function (req, res, next) {
     var allhtml = juice(data+context);
 
     var mailOptions = {
-        from:  'testreport@husor.com.cn', // sender address
+        from:  'xxx@qq.com', // sender address
         to: req.body.to, // list of receivers
         subject:  req.body.subject, // Subject line
         text: 'Hello world ?', // plaintext body
